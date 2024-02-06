@@ -1,5 +1,7 @@
 import React, {useRef, useState} from 'react';
 import {
+  Dimensions,
+  FlatList,
   ScrollView,
   StatusBar,
   StyleSheet,
@@ -20,9 +22,7 @@ import {
 } from '../theme/theme';
 import HeaderBar from '../components/HeaderBar';
 import CustomIcon from '../components/CustomIcon';
-import {FlatList} from 'react-native';
 import CoffeeCard from '../components/CoffeeCard';
-import {Dimensions} from 'react-native';
 
 const getCategoriesFromData = (data: any) => {
   let temp: any = {};
